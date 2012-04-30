@@ -24,16 +24,56 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 90%; /* WICHTIG!!! STRECKT ANZEIGENBEREICH AUF 100% */
+	
 }
+
+div
+{
+background:red;
+position:relative;
+animation:mymove 5s;
+-moz-animation:mymove 5s; /* Firefox */
+-webkit-animation: mymove 5s; /* Safari and Chrome */
+-webkit-transition-duration: 1s, 1s;
+  -webkit-transition-function: ease-in, ease-out;
+ /*
+-webkit-transform:	translate(1%,1%);
+-moz-transform: 	translate(1%,1%);
+-o-transform: 		translate(1%,1%);
+-ms-transform: 		translate(1%,1%);*/
+   }
+
+@keyframes mymove
+{
+from {left:0%;}
+to {left:-66%;}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+from {left:0%;}
+to {left:-66%;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+from {left:0%;}
+to {left:-66%;}
+}
+
 #lala {
 	width:100%;
 }
 #lala td {
 	width:50%;	
 }
+footer {
+	position:fixed;
+	width:100%;
+}
 #buttonsstyle {
-/*	width:100%;
-	height:200px;
+	width:100%;
+	height:80px;
 	/*vielleicht mit calc versuchen*/
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
