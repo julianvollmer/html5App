@@ -1,0 +1,27 @@
+#content{
+	-moz-column-count: 1; 
+	-moz-column-gap: 1em; 
+	-moz-column-rule: 1px solid black; 
+	-webkit-column-count: 1; 
+	-webkit-column-gap: 1em; 
+	-webkit-column-rule: 1px solid black;
+	overflow:visible;
+/*	overflow: hidden;
+	white-space: nowrap;
+	word-wrap: break-word;
+	height:100%;
+	text-overflow: ellipsis-word;
+	-o-text-overflow: ellipsis;*/
+	min-height: 100%; /* Mindesthöhe für moderne Browser */
+/*	min-width: 500%; /* Mindesthöhe für moderne Browser */
+	height:auto !important; /* Important Regel für moderne Browser */ 
+	height:90%; /* Mindesthöhe für den IE */ 
+/*	overflow: hidden !important; /* FF Scroll-leiste */ 
+}
+
+html, body { 
+	background-color: #555;
+	margin: 0;
+	padding: 0;
+	height: 100%; /* WICHTIG!!! STRECKT ANZEIGENBEREICH AUF 100% */
+}
